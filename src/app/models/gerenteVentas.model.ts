@@ -21,7 +21,9 @@ export class Ventas {
   vequipo: number;
   comisionBase: number;
   bonoMVservicios: number;
+  nBonoS: string;
   bonoMVequipos: number;
+  nBonoE: string;
   bonoTotal: number;
   constructor() {
     this.idMes = 0;
@@ -32,5 +34,7 @@ export class Ventas {
     this.bonoMVservicios = 0;
     this.bonoMVequipos = 0;
     this.bonoTotal = 0;
+    this.nBonoS = '';
+    this.nBonoE = '';
   }
 }

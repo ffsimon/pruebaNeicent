@@ -18,7 +18,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         },
         {
           idMes: 2,
@@ -28,7 +30,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         },
         {
           idMes: 3,
@@ -38,7 +42,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         },
         {
           idMes: 4,
@@ -48,7 +54,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         }
       ]
     },
@@ -66,7 +74,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         },
         {
           idMes: 2,
@@ -76,7 +86,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         },
         {
           idMes: 3,
@@ -86,7 +98,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         },
         {
           idMes: 4,
@@ -96,7 +110,9 @@ export class Lista {
           comisionBase: 0,
           bonoMVservicios: 0,
           bonoMVequipos: 0,
-          bonoTotal: 0
+          bonoTotal: 0,
+          nBonoS: 'N/A',
+          nBonoE: 'N/A'
         }
       ]
     }

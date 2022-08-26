@@ -85,11 +85,13 @@ export class ReporteComponent implements OnInit {
               comXservicios = this.listaRangosServios.filter(y => porcentaje >= y.inicio && porcentaje <= y.fin)[0].monto;
             }
             x.bonoMVservicios = comXservicios;
+            x.nBonoS = `Nivel: ${this.listaRangosServios.filter(y => porcentaje >= y.inicio)[0].nivel}`;
           } else {
             x.bonoMVservicios = 0;
           }
         }
         const comXequipos = (this.listaRangosEquipos.filter(y => x.vequipo >= y.inicio && x.vequipo <= y.fin)[0].comision / 100);
+        x.nBonoE = `Nivel: ${this.listaRangosEquipos.filter(y => x.vequipo >= y.inicio && x.vequipo <= y.fin)[0].nivel}`;
         x.bonoMVequipos = comXequipos * x.vequipo
         x.bonoTotal = (x.comisionBase + x.bonoMVservicios + x.bonoMVequipos);
   
