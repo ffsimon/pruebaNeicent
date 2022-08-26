@@ -1,0 +1,76 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row">
+      <form action="">
+        <div class="form-group col-lg-6 col-md-6 col-sm-6 col-sx-12">
+          <label for="fechaInicio">Seleccione la persona</label>
+          <select class="form-control" id="persona" name="persona" [(ngModel)]="persona" (change)="personaSeleccionada(persona)">
+            <option [value]="0">Seleccione una opción</option>
+            <option *ngFor="let item of listaEjecutivosVentas" [value]="item.id">{{ item.nombre }}</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <br>
+    <div class="row" *ngIf="barChartData.length > 0">
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="card s-g-card">
+          <div class="c-div">
+            <h5>Ventas de Servicios y Equipos</h5>
+          </div>
+          <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            chartType="bar"
+            height="590">
+          </canvas>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" *ngIf="pie != null">
+        <div class="card s-g-card">
+          <div class="c-div">
+            <h5>Bonos Totales</h5>
+          </div>
+          <canvas baseChart
+                [data]="pieChartData"
+                [type]="pieChartType"
+                [options]="pieChartOptions"
+                height="50"
+                width="50">
+          </canvas>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row" *ngIf="persona == 1 || persona == 2">
+      <div class="">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Mes</th>
+              <th scope="col">Servicios</th>
+              <th scope="col">Equipo</th>
+              <th scope="col">Comisión Base</th>
+              <th scope="col">Bono Servicios</th>
+              <th scope="col">Bono Equipo</th>
+              <th scope="col">Bono Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of ejecutivoSeleccionado.ventas">
+              <th scope="row">{{ item.mes }}</th>
+              <td>{{ item.vservicio | currency }}</td>
+              <td>{{ item.vequipo | currency }}</td>
+              <td>{{ item.comisionBase | currency }}</td>
+              <td>{{ item.bonoMVservicios | currency }}</td>
+              <td>{{ item.bonoMVequipos | currency }}</td>
+              <td>{{ item.bonoTotal | currency }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
