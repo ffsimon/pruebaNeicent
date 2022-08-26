@@ -54,7 +54,9 @@
               <th scope="col">Equipo</th>
               <th scope="col">Comisión Base</th>
               <th scope="col">Bono Servicios</th>
+              <th scope="col">Nivel Bono Servicios</th>
               <th scope="col">Bono Equipo</th>
+              <th scope="col">Nivel Bono Servicios</th>
               <th scope="col">Bono Total</th>
             </tr>
           </thead>
@@ -64,8 +66,10 @@
               <td>{{ item.vservicio | currency }}</td>
               <td>{{ item.vequipo | currency }}</td>
               <td>{{ item.comisionBase | currency }}</td>
-              <td>{{ item.bonoMVservicios | currency }} {{ item.nBonoS }}</td>
-              <td>{{ item.bonoMVequipos | currency }} {{ item.nBonoE }}</td>
+              <td>{{ item.bonoMVservicios | currency }} </td>
+              <td>{{ item.nBonoS }}</td>
+              <td>{{ item.bonoMVequipos | currency }}</td>
+              <td>{{ item.nBonoE }}</td>
               <td>{{ item.bonoTotal | currency }}</td>
             </tr>
           </tbody>

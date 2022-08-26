@@ -81,11 +81,12 @@ export class ReporteComponent implements OnInit {
             let comXservicios = 0;
             if (porcentaje >= 120) {
               comXservicios = this.listaRangosServios.filter(y => porcentaje >= y.inicio)[0].monto;
+              x.nBonoS = 'Nivel: 3'
             } else {
               comXservicios = this.listaRangosServios.filter(y => porcentaje >= y.inicio && porcentaje <= y.fin)[0].monto;
+              x.nBonoS = `Nivel: ${this.listaRangosServios.filter(y => porcentaje >= y.inicio && porcentaje <= y.fin)[0].nivel}`;
             }
             x.bonoMVservicios = comXservicios;
-            x.nBonoS = `Nivel: ${this.listaRangosServios.filter(y => porcentaje >= y.inicio)[0].nivel}`;
           } else {
             x.bonoMVservicios = 0;
           }
