@@ -17,10 +17,10 @@ export class Lista {
           vequipo: 20000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         },
         {
           idMes: 2,
@@ -29,10 +29,10 @@ export class Lista {
           vequipo: 10000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         },
         {
           idMes: 3,
@@ -41,10 +41,10 @@ export class Lista {
           vequipo: 5000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         },
         {
           idMes: 4,
@@ -53,10 +53,10 @@ export class Lista {
           vequipo: 30000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         }
       ]
     },
@@ -73,10 +73,10 @@ export class Lista {
           vequipo: 9000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         },
         {
           idMes: 2,
@@ -85,10 +85,10 @@ export class Lista {
           vequipo: 20000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         },
         {
           idMes: 3,
@@ -97,10 +97,10 @@ export class Lista {
           vequipo: 5000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         },
         {
           idMes: 4,
@@ -109,10 +109,10 @@ export class Lista {
           vequipo: 40000,
           comisionBase: 0,
           bonoMVservicios: 0,
-          bonoMVequipos: 0,
-          bonoTotal: 0,
           nBonoS: 'N/A',
-          nBonoE: 'N/A'
+          bonoMVequipos: 0,
+          nBonoE: 'N/A',
+          bonoTotal: 0
         }
       ]
     }

@@ -1,9 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { BubbleDataPoint, ChartConfiguration, ChartData, ChartType, ScatterDataPoint } from 'chart.js';
 import { ChartModel } from 'src/app/models/chart.model';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
+
 import { cRN, cRS } from 'src/app/models/contantes';
 import { EjecutivoVentasModel, Ventas } from 'src/app/models/gerenteVentas.model';
 import { Lista } from './listaEjecutivos';
+import { UtilitiesService } from 'src/app/services/utilities.service';
 
 @Component({
   selector: 'app-reporte',
@@ -49,7 +53,7 @@ export class ReporteComponent implements OnInit {
   public barChartLegend = true;
   public barChartData: Array<ChartModel> = [];
 
-  constructor() { }
+  constructor(private utilitiesService: UtilitiesService) { }
 
   ngOnInit(): void {
     console.log(this.listaEjecutivosVentas);
@@ -121,5 +125,14 @@ export class ReporteComponent implements OnInit {
       });
     }
     return chartValor;
+  }
+  
+  public openPDF(): void {
+    let DATA: any = document.getElementById('htmlData');
+    this.utilitiesService.openPDF(DATA);
+  }
+
+  public async exportarExcel() {
+    this.utilitiesService.exportarExcel(this.ejecutivoSeleccionado.ventas, 'Ventas');
   }
 }
